@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title style=" font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Vartika Singh</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Handlee&family=Itim&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+ <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+<link type='text/css' rel="stylesheet" href="style.css">
+  </head>
+  <style>
+      .scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+  </style>
+   <body>
+    
+<nav class="navbar fixed-top navbar-expand-lg navbar-default" >
+  <div class="container">
+    <a class="navbar-brand" href="#"><img class="logo" src="flogo.jpg" alt="logo"/></a>
+      <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: rgba(90, 196, 204, 0.486);"><i class="fas fa-bars"></i></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mc-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">HOME<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/projects">ABOUT ME<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/skills">SKILLS</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/blogs">BLOGS</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="/resume">RESUME</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT ME</a>
+          </li>
+         
+        </ul>
+       
+      </div>
+      </div>
+  </nav> 
+        <div class="middle">
+         <img src="" alt="">
+         
+        <script>
+
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+        </script>
+
+<h1>
+  <a href="" style="font-family: 'Sacramento', cursive; color:rgb(255, 255, 255);text-shadow: 6px 2px 5px rgba(50, 55, 56, 0.44); font-size: 4rem;"class="typewrite" data-period="2000" data-type='[ "Hi, I am Vartika.", "Welcome to my Website", "How you doin?", "I Love to Develop." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+
+
+
+
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    <footer class="bottom">
+      <div class="footer-basic">
+        
+            <div class="social">
+              <a style="color:black;"href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a style="color:rgb(21, 126, 196);" href="#">
+                <i class="fab fa-linkedin-in"></i></i>
+              
+        </a>
+        <a style="color:rgb(21, 126, 196);" href="#">
+        
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a style="color:rgb(21, 82, 196);"href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a></div>
+            
+            <p class="copyright">Vartika Singh © 2018</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    </body>

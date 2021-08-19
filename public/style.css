@@ -1,0 +1,254 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Stalemate&display=swap');
+:root{
+  --primary-white: #fff;
+  --primary-green: #0CECDD;
+  --primary-light-purple: #FBC7F7;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(https://cdn.dribbble.com/users/2155177/screenshots/11437146/media/adc7a0f142cc89bebf9eeb2d5ece5f9e.png?compress=1&resize=1600x1200)  ;
+  background-repeat: no-repeat;
+  z-index: 1;
+  mix-blend-mode: soft-light;
+
+  position: relative;
+  background-blend-mode: darken;
+  background-size:cover; 
+  background-position: right;
+
+  height: 180vh;
+}
+
+.logo{
+  margin-top: 10%;
+  margin-left: 20%;
+  /* padding-left: 5% !important; */
+  width:7rem;
+ /* filter:opacity(80%); */
+ /* height: 90px; */
+}
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.0375rem; 
+  cursor:pointer;
+  font-size: 0.75rem;
+}
+
+nav ul li{
+  transform: uppercase;
+}
+.navbar{
+    padding-top:0%;
+    margin-top:0%;
+    /* opacity: 10%; */
+    background-color: rgba(255, 255, 255);
+    color: #ffffff;
+    height:15%;
+    border: none;
+      
+      z-index: 100;
+      transition: background-color 1s ease 0s;
+    }
+.navbar-nav {
+  padding-top:0%;
+  background-color: rgba(255, 255, 255,0.7);
+  margin-left:  10%;
+  margin-top:5.2%;
+}
+.navbar-nav > li > a{
+  text-shadow: black;
+  transform: uppercase;
+  margin: 0 1rem;
+  color:#0c595cc0;
+  border-top: 0.1875rem solid var(--primary-white);
+  text-shadow: 2px 1px 2px rgba(189, 188, 188, 0.548);
+}
+
+.navbar-brand{
+  padding-left: 9% !important;
+  max-width: 17.25rem;
+  /* padding: 0 !important; */
+  height: 6rem !important;
+  border-top: 0.1875rem solid var(--primary-white);
+}
+
+.navbar-nav > li > a.active,  .navbar-nav > li > a:focus {
+  border-top: 0.1875rem solid var(--primary-green);
+}
+.navbar-nav> li > a:hover{
+  border-top: 0.1975rem solid var(--primary-green);
+
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  padding-top: 5em;
+  color: rgba(221, 236, 238, 0.719);
+  font-family: 'Stalemate', cursive;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(19, 12, 1) }
+}
+
+
+body {
+ 
+  background-color:#07587046;
+  text-align: center;
+  color:#fff;
+  padding-top:20em;
+
+}
+
+.bottom{
+  position: static;
+  margin-bottom:0%;
+}
+
+    .footer-basic {
+      padding:3% 0;
+      background-color: rgba(255, 255, 255, 0.877);
+      color:#4b4c4d;
+      position:absolute;
+      bottom:0;
+      width:100%;
+    }
+    
+    .footer-basic ul {
+      padding:0;
+      list-style:none;
+      text-align:center;
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:0;
+    }
+    
+    .footer-basic li {
+      padding:0 10px;
+    }
+    
+    .footer-basic ul a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+      opacity:1;
+    }
+    
+    .footer-basic .social {
+      text-align:center;
+      /* padding-bottom:25px; */
+    }
+    
+    .footer-basic .social > a {
+      font-size:24px;
+      width:40px;
+      height:40px;
+      line-height:40px;
+      display:inline-block;
+      text-align:center;
+      border-radius:50%;
+      border:1px solid #ccc;
+      margin:0 8px;
+      color:inherit;
+      opacity:0.75;
+      color: rgb(5, 59, 63)
+    }
+    
+    .footer-basic .social > a:hover {
+      opacity:0.9;
+      color: rgba(14, 106, 112, 0.425);
+    }
+    
+    .footer-basic .copyright {
+      font-family: 'Montserrat', sans-serif;
+      margin-top:15px;
+      text-align:center;
+      font-size:13px;
+      color:rgb(116, 116, 116);
+      margin-bottom:0;
+     
+    }
+    
+.main {
+  background-color: rgba(22, 8, 8, 0.027);
+  padding-top:0% ;
+  margin-top: 0%;
+  margin-left:15%;
+ margin-right:15%
+}
+
+.main section{
+
+  background-color: rgba(222, 226, 238, 0.815);
+}
+
+.main section span{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder;
+  text-decoration: salmon;
+  
+  font-size: 20px;
+}
+.main section p{
+  text-align:left ;
+  color:rgb(5, 12, 24);
+  background-color: #e1f6ff4d;
+  padding: 5%;
+  font-family: 'Crimson Text', serif;
+}
+.main section h1{
+  color:black;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 2px #b2f3ff;
+  padding: 2%;
+  
+}
+.main section h3{
+  font-size: 1.5rem;
+  text-shadow: 5px 2px 2px #e2e2e2;
+}
+
+.main section.dest p{
+
+  /* font-family: 'Reenie Beanie', cursive; */
+  font-family: 'La Belle Aurore', cursive;
+  padding: 2%;
+  color: #4d474700;
+  background-color: #ffffff;
+}
+.main section img{
+
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.about img{
+  padding-top:0%;
+  margin-top:0%;
+
+  width: 100%;
+}
